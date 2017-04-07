@@ -4,6 +4,7 @@ namespace MScharl\LaravelStaticImageCache\Provider;
 
 use Illuminate\Support\ServiceProvider;
 use MScharl\LaravelStaticImageCache\Classes\ImageProxy;
+use MScharl\LaravelStaticImageCache\Commands\ClearStaticCache;
 
 class LaravelStaticImageCacheProvider extends ServiceProvider
 {
@@ -34,7 +35,9 @@ class LaravelStaticImageCacheProvider extends ServiceProvider
             return new ImageProxy();
         });
 
-        $this->app->alias('static-image-cache', 'ImageProxy');
+        $this->commands([
+            ClearStaticCache::class,
+        ]);
     }
 
     public function provides()
