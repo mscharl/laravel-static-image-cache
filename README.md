@@ -18,3 +18,8 @@ Just use the `staticImage`-helper to generate the static file url
 <img src="{{ staticImage('https://images.domain.com/my-image.jpg') }}" alt="An external image">
 ```
 
+## Clear the files
+To clear all the files manually you can use an artisan task.
+```bash
+php artisan static-image-cache:clear
+```
