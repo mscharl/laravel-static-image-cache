@@ -1,0 +1,28 @@
+{
+    "name": "mscharl/laravel-static-image-cache",
+    "description": "store/cache external images as a static file",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Scharl",
+            "email": "michael.scharl@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.0.0",
+        "illuminate/filesystem": "^5.0,<5.5",
+        "illuminate/http": "^5.0,<5.5",
+        "illuminate/routing": "^5.0,<5.5",
+        "illuminate/support": "^5.0,<5.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "MScharl\\LaravelStaticImageCache\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
