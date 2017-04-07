@@ -18,25 +18,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Cache route prefix
-    |--------------------------------------------------------------------------
-    |
-    | The route prefix to use for the proxy route. Changing this will also
-    | require to update your .htaccess config.
-    */
-
-    'image_route_prefix' => 'image',
-
-    /*
-    |--------------------------------------------------------------------------
     | Cache path prefix
     |--------------------------------------------------------------------------
     |
     | The path prefix relative to `public_path`. This is where the images will
-    | be stored.
-    | Changing this will also require to update your .htaccess config.
+    | be stored. This path will also be used as the proxy-url prefix.
     */
 
-    'cache_path_prefix' => 'cache/image',
-
+    'cache_path_prefix' => 'cache/images',
 ];

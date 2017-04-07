@@ -10,15 +10,6 @@ Add the service provider to the `app.php` provider array
 ]
 ```
 
-Add this snippet to your .htaccess 
-```apacheconfig
-RewriteEngine On
-
-# Rewrite to image cache if it exists
-RewriteCond %{DOCUMENT_ROOT}/cache%{REQUEST_URI} -f
-RewriteRule ^(.*)$ /cache%{REQUEST_URI} [L]
-```
-
 
 ## Usage
 Just use the `staticImage`-helper to generate the static file url
